@@ -6,10 +6,7 @@ import SigninModalContainer from '../signin_modal/signin_modal_container';
 const sessionLinks = () => (
   <div className='header'>
     <span className="nav-bar">
-      <Link to="/" className="header-link">
-        <h1>TableUp</h1>
-      </Link>
-      <img src='app/assets/images/tableup_logo1.png'></img>
+      <Link to="/" className="main-logo"></Link>
       <span className='modal-buttons'>
         <SignupModalContainer />
         <SigninModalContainer />
