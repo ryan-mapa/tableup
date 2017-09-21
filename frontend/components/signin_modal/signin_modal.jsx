@@ -40,9 +40,6 @@ class SigninModal extends React.Component {
   }
 
   render() {
-      console.log(this.props);
-
-
     return (
       <span>
 
@@ -76,7 +73,6 @@ class SigninModal extends React.Component {
               <input type="submit" value="Submit" />
             </form>
 
-          <button onClick={this.closeModal}>close</button>
         </Modal>
       </span>
     );

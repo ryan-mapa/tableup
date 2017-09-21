@@ -89,7 +89,6 @@ class SignupModal extends React.Component {
               <input type="submit" value="Submit" />
             </form>
 
-          <button onClick={this.closeModal}>close</button>
         </Modal>
       </span>
     );
