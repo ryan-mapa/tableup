@@ -71,14 +71,12 @@ class SigninModal extends React.Component {
 
   guestLogin(e) {
     e.preventDefault();
-    this.setState(
-      {
-        username: "guest1",
-        password: "123456",
-      }
-    );
-    const user = Object.assign({}, this.state);
-
+    this.props.login(      {
+            username: "guest1",
+            password: "123456",
+          }).then(() => {
+      if (this.props.errors.length === 0) {this.closeModal();}
+    });
   }
 
   render() {
