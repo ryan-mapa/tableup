@@ -44,7 +44,7 @@ class SigninModal extends React.Component {
 
   closeModal() {
     this.props.clearErrors();
-    // this.setState({modalIsOpen: false});
+    this.setState({modalIsOpen: false});
   }
 
   handleSubmit(e) {
