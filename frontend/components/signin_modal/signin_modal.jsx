@@ -2,13 +2,30 @@ import React from 'react';
 import Modal from 'react-modal';
 
 const customStyles = {
+  overlay : {
+    position          : 'fixed',
+    top               : 0,
+    left              : 0,
+    right             : 0,
+    bottom            : 0,
+    backgroundColor   : 'rgba(255, 255, 255, 0.75)'
+  },
   content : {
-    top                   : '50%',
-    left                  : '50%',
-    right                 : 'auto',
-    bottom                : 'auto',
-    marginRight           : '-50%',
-    transform             : 'translate(-50%, -50%)'
+    position                   : 'absolute',
+    top                        : '50%',
+    left                       : '50%',
+    right                      : 'auto',
+    bottom                     : 'auto',
+    border                     : '1px solid #ccc',
+    background                 : '#fff',
+    overflow                   : 'auto',
+    WebkitOverflowScrolling    : 'touch',
+    borderRadius               : '0px',
+    outline                    : 'none',
+    padding                    : '20px',
+    marginRight                : '-50%',
+    transform                  : 'translate(-50%, -50%)',
+    width                      : '400px'
   }
 };
 
@@ -26,8 +43,8 @@ class SigninModal extends React.Component {
   }
 
   closeModal() {
-    this.setState({modalIsOpen: false});
     this.props.clearErrors();
+    this.setState({modalIsOpen: false});
   }
 
   handleSubmit(e) {
@@ -61,29 +78,27 @@ class SigninModal extends React.Component {
           isOpen={this.state.modalIsOpen}
           onRequestClose={this.closeModal}
           style={customStyles}
-          contentLabel="Example Modal"
+          contentLabel="signin"
+          className="style-modal"
         >
-          <div>LOG ME IN YO</div>
-
-            <form onSubmit={e => this.handleSubmit(e)}>
+          <div>Please sign in</div>
+          <hr />
+            <form className="session-form" onSubmit={e => this.handleSubmit(e)}>
               <br />
-              <label>Username:
                 <input type="text"
                   value={this.state.username}
                   onChange={(e) => this.update(e, 'username')}
-                  className="login-input"
+                  className="modal-input"
+                  placeholder="Username"
                 />
-              </label>
-              <br />
-              <label>Password:
                 <input type="password"
                   value={this.state.password}
                   onChange={(e) => this.update(e, 'password')}
-                  className="login-input"
+                  className="modal-input"
+                  placeholder="Password"
                 />
-            </label>
               <br />
-              <input type="submit" value="Submit" />
+              <input className="modal-button" type="submit" value="Sign In" />
             </form>
             <span className='session-errors'>{this.renderErrors()}</span>
         </Modal>
