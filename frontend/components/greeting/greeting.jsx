@@ -19,8 +19,8 @@ const personalGreeting = (currentUser, logout) => (
 	<span className="nav-bar">
     <Link to="/" className="main-logo"></Link>
     <span className="nav-bar">
-      <h2>Yo, {currentUser.name}!</h2>
-      <button className="header-button" onClick={logout}>Log Out</button>
+      <h2>Hi, {currentUser.name}</h2>
+      <button className="header-button" onClick={logout}>Sign Out</button>
     </span>
 	</span>
 );

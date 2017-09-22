@@ -4,15 +4,15 @@
   padding: 15px;
   align-items: center;
   max-width: 1140px;
-
-  background-color: orange;
+  margin: auto;
+  // background-color: orange;
 }
 
 .main-logo {
-  background-image: url('tableup_logo1.png');
+  background-image: url('tableup_logo.png');
 
-  height: 150px;
-  width: 350px;
+  height: 85px;
+  width: 245px;
 }
 
 .header-link {
@@ -24,7 +24,9 @@
   font-family: sans-serif;
   text-decoration: none;
   color: grey;
-  font-size: 30px
+  font-size: 25px;
+  margin-right: 15px;
+  color: #4b515b;
 }
 
 
