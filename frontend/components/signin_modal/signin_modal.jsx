@@ -69,6 +69,18 @@ class SigninModal extends React.Component {
     );
   }
 
+  guestLogin(e) {
+    e.preventDefault();
+    this.setState(
+      {
+        username: "guest1",
+        password: "123456",
+      }
+    );
+    const user = Object.assign({}, this.state);
+
+  }
+
   render() {
     return (
       <span>
@@ -99,6 +111,7 @@ class SigninModal extends React.Component {
                 />
               <br />
               <input className="modal-button" type="submit" value="Sign In" />
+              <button className="modal-button" onClick={(e) => this.guestLogin(e)}>Sign In as Guest</button>
             </form>
             <span className='session-errors'>{this.renderErrors()}</span>
         </Modal>
