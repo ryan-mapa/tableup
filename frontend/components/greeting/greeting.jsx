@@ -16,12 +16,12 @@ const sessionLinks = () => (
 );
 
 const personalGreeting = (currentUser, logout) => (
-	<span className="header-group">
-    <Link to="/" className="header-link">
-      <h1>TableUp</h1>
-    </Link>
-    <h2 className="header-name">Yo, {currentUser.name}!</h2>
-    <button className="header-button" onClick={logout}>Log Out</button>
+	<span className="nav-bar">
+    <Link to="/" className="main-logo"></Link>
+    <span className="nav-bar">
+      <h2>Yo, {currentUser.name}!</h2>
+      <button className="header-button" onClick={logout}>Log Out</button>
+    </span>
 	</span>
 );
 

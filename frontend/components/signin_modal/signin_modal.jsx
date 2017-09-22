@@ -27,16 +27,29 @@ class SigninModal extends React.Component {
 
   closeModal() {
     this.setState({modalIsOpen: false});
+    this.props.clearErrors();
   }
 
   handleSubmit(e) {
     e.preventDefault();
     const user = Object.assign({}, this.state);
-    this.props.login(user);
+    this.props.login(user).then(() => {
+      if (this.props.errors.length === 0) ( this.closeModal());
+    });
   }
 
   update(e, field) {
     return this.setState({ [field]: e.currentTarget.value });
+  }
+
+  renderErrors() {
+    return (
+      <ul>
+        {this.props.errors.map((error, i) => (
+          <li key={`error-${i}`}>{error}</li>
+        ))}
+      </ul>
+    );
   }
 
   render() {
@@ -68,11 +81,11 @@ class SigninModal extends React.Component {
                   onChange={(e) => this.update(e, 'password')}
                   className="login-input"
                 />
-              </label>
+            </label>
               <br />
               <input type="submit" value="Submit" />
             </form>
-
+            <span className='session-errors'>{this.renderErrors()}</span>
         </Modal>
       </span>
     );
