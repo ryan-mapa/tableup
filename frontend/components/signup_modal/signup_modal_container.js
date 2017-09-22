@@ -4,7 +4,7 @@ import SignupModal from './signup_modal';
 
 const mapStateToProps = (state) => ({
   currentUser: state.session.currentUser,
-  errors: state.session.errors
+  errors: state.errors
 });
 
 const mapDispatchToProps = (dispatch) => ({
