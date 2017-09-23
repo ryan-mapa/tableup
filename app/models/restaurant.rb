@@ -16,7 +16,7 @@
 #
 
 class Restaurant < ApplicationRecord
-  validates :name, null: false
+  validates :name, null: false, unique: true
 
-  
+
 end
