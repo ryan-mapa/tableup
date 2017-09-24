@@ -5,7 +5,7 @@ import {
 import RestaurantIndex from './restaurant_index';
 
 const mapStateToProps = (state) => ({
-  restaurants: Object.values(state.restaurants)
+  restaurants: Object.values(state.entities.restaurants)
 });
 
 const mapDispatchToProps = (dispatch) => ({

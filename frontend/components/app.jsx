@@ -6,7 +6,7 @@ import SignupModalContainer from './signup_modal/signup_modal_container';
 import RestaurantIndexContainer from './restaurant/restaurant_index_container';
 
 const App = () => (
-  <div>
+  <div className='app-container'>
     <GreetingContainer />
     <RestaurantIndexContainer />
 
