@@ -24,7 +24,7 @@ class RestaurantSearchForm extends React.Component {
       <div className='search-form'>
         <input
           className='search-input'
-          placeholder='Location, Restaurant, or Cuisine'
+          placeholder='Restaurant, City, or Cuisine'
           value={this.state.search}
           onChange={e => this.update(e)}
           ></input>

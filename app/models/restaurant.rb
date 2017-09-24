@@ -23,10 +23,15 @@ class Restaurant < ApplicationRecord
     Restaurant.where('lower(name) LIKE ?', param).limit(10)
   end
 
+  def self.search_by_cuisine(query)
+    param = '%' + query.downcase + '%'
+    Restaurant.where('lower(cuisine) LIKE ?', param).limit(10)
+  end
+
   def self.search_results(query)
     param = '%' + query.downcase + '%'
     by_name = Restaurant.where('lower(city) LIKE ?', param).limit(10)
-    by_name + search_by_city(query)
+    by_name + search_by_city(query) + search_by_cuisine(query)
   end
 
 end
