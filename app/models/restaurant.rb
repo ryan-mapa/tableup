@@ -18,5 +18,8 @@
 class Restaurant < ApplicationRecord
   validates :name, null: false, uniqueness: true
 
-
+  def self.search_results(query)
+    param = '%' + query.downcase + '%'
+    Restaurant.where('lower(name) LIKE ?', param).limit(5)
+  end
 end
