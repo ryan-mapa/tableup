@@ -24,3 +24,8 @@ export const fetchRestaurant = (id) => dispatch => (
   APIUtil.fetchRestaurant(id)
       .then((restaurant) => dispatch(receiveRestaurant(restaurant)))
 );
+
+export const searchRestaurants = (query) => dispatch => (
+  APIUtil.searchRestaurants(query)
+      .then((restaurants) => dispatch(receiveRestaurants(restaurants)))
+);
