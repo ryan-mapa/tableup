@@ -3,7 +3,7 @@ import React from 'react';
 class RestaurantSearchForm extends React.Component {
   constructor(props) {
     super(props);
-    this.state = this.props.restaurants;
+    this.state = {search: ""};
   }
 
   componentDidMount() {
@@ -11,17 +11,22 @@ class RestaurantSearchForm extends React.Component {
   }
 
   handleClick(e) {
+    e.preventDefault();
+    this.props.searchRestaurants(this.state.search);
+  }
 
+  update(e) {
+    this.setState({search: e.target.value});
   }
 
   render() {
     return(
-      <div>
-
-
+      <div className='search-form'>
         <input
           className='search-input'
           placeholder='find restaurants'
+          value={this.state.search}
+          onChange={e => this.update(e)}
           ></input>
         <button
           className='search-button'

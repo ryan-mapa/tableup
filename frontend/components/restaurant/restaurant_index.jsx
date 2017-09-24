@@ -7,7 +7,6 @@ class restaurantIndex extends React.Component {
     super(props);
   }
 
-
   componentWillMount() {
     this.props.fetchRestaurants();
   }
