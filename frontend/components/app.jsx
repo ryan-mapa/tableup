@@ -9,7 +9,10 @@ import RestaurantSearchContainer from './search/restaurant_search_form_container
 const App = () => (
   <div className='app-container'>
     <GreetingContainer />
-    <RestaurantSearchContainer />
+    <div className='main-img'>
+      <RestaurantSearchContainer />
+    </div>
+
     <RestaurantIndexContainer />
 
 

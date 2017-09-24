@@ -3,3 +3,20 @@
   padding: 0px 80px;
   margin: auto;
 }
+
+.main-img {
+  background-image: url('http://res.cloudinary.com/djyzqmji3/image/upload/c_scale,h_569,w_1152/v1506291888/bowl-1850039_1920_uajhnb.jpg');
+  height: 380px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.search-form {
+  background-color: white;
+  margin: 30px;
+  height: 100px;
+  width: 450px;
+  border: 2px black;
+  border-radius: 5px;
+  align-items: center;
+}
