@@ -4,6 +4,7 @@ Rails.application.routes.draw do
     resource :user, only: [:create]
     resource :session, only: [:create, :destroy, :show]
     resources :restaurants, only: [:create, :index, :show, :update]
+    resources :restaurant_searches, only: [:index]
   end
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
