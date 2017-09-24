@@ -2,7 +2,7 @@ import {connect} from 'react-redux';
 import RestaurantSearchForm from './restaurant_search_form';
 import {
   fetchRestaurants,
-  searchRestaurants} from '../../actions.restaurant_actions';
+  searchRestaurants} from '../../actions/restaurant_actions';
 
 const mapStateToProps = (state) => ({
   restaurants: state.entities.restaurants
