@@ -5,14 +5,14 @@ import {
 import merge from 'lodash/merge';
 
 const RestaurantReducer = (state = {}, action) => {
+  Object.freeze(state);
   switch(action.type) {
     case RECEIVE_RESTAURANTS:
-      let newstate = merge({}, state, action.restaurants);
-      return newstate;
+      return action.restaurants;
     case RECEIVE_RESTAURANT:
-      let addstate = state;
-      addstate[action.restaurant.id] = action.restaurant;
-      return addstate;
+      let newstate = Object.assign({}, state);
+      newstate[action.restaurant.id] = action.restaurant;
+      return newstate;
     default:
       return state;
   }
