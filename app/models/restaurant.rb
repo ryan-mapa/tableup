@@ -18,8 +18,15 @@
 class Restaurant < ApplicationRecord
   validates :name, null: false, uniqueness: true
 
-  def self.search_results(query)
+  def self.search_by_city(query)
     param = '%' + query.downcase + '%'
     Restaurant.where('lower(name) LIKE ?', param).limit(10)
   end
+
+  def self.search_results(query)
+    param = '%' + query.downcase + '%'
+    by_name = Restaurant.where('lower(city) LIKE ?', param).limit(10)
+    by_name + search_by_city(query)
+  end
+
 end
