@@ -48,5 +48,8 @@
     "url": "https://github.com/ryan-mapa/tableup/issues"
   },
   "homepage": "https://github.com/ryan-mapa/tableup#readme",
-  "devDependencies": {}
+  "devDependencies": {
+    "css-loader": "^0.28.7",
+    "style-loader": "^0.18.2"
+  }
 }

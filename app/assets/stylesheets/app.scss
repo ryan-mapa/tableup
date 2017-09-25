@@ -17,7 +17,7 @@
   background-color: white;
   margin: 30px;
   height: 130px;
-  width: 600px;
+  width: 800px;
   border: 1px solid grey;
   border-radius: 5px;
   align-items: center;
@@ -28,6 +28,10 @@
   margin-bottom: 10px;
 }
 
+.search-bar {
+    display: flex;
+}
+
 .search-form h2 {
   font-family: helvetica;
   font-weight: 400;
@@ -35,8 +39,18 @@
   margin-left: 20px;
 }
 
-.search-input {
+.calendar-style {
   margin-left: 20px;
+  height: 34px;
+  font-weight: 400;
+  font-family: helvetica;
+  padding-left: 15px;
+  width: 170px;
+  color: grey;
+}
+
+.search-input {
+  margin-left: 2px;
   height: 34px;
   font-weight: 400;
   font-family: helvetica;

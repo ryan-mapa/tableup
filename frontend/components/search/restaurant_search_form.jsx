@@ -1,4 +1,5 @@
 import React from 'react';
+import Calendar from './calendar';
 
 class RestaurantSearchForm extends React.Component {
   constructor(props) {
@@ -22,16 +23,18 @@ class RestaurantSearchForm extends React.Component {
   render() {
     return(
       <div className='search-form'>
-
         <form onSubmit={e => this.handleClick(e)}>
           <h2>TableUp Today!</h2><br />
-          <input
-            className='search-input'
-            placeholder='Restaurant, City, or Cuisine'
-            value={this.state.search}
-            onChange={e => this.update(e)}
-            />
-          <input className='search-button' type='submit' value='Find Tables'></input>
+          <span className='search-bar' >
+            <Calendar />
+            <input
+              className='search-input'
+              placeholder='Restaurant, City, or Cuisine'
+              value={this.state.search}
+              onChange={e => this.update(e)}
+              />
+            <input className='search-button' type='submit' value='Find Tables'></input>
+          </span>
         </form>
       </div>
     );

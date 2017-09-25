@@ -1,8 +1,4 @@
 import React from 'react';
-import DatePicker from 'react-datepicker';
-import moment from 'moment';
-
-
 
 const RestaurantItem = ({restaurant}) => {
   let length = Math.round(restaurant.rating);
