@@ -8,6 +8,8 @@ class CreateRestaurants < ActiveRecord::Migration[5.1]
       t.float :rating
       t.text :description
       t.string :profile_image
+      t.integer :open
+      t.integer :close
       t.string :cuisine
 
       t.timestamps

@@ -18,8 +18,8 @@ ActiveRecord::Schema.define(version: 20170925051039) do
   create_table "reservations", force: :cascade do |t|
     t.integer "user_id", null: false
     t.integer "restaurant_id", null: false
-    t.string "date", null: false
-    t.string "time_slot", null: false
+    t.date "date", null: false
+    t.integer "time_slot", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -32,6 +32,8 @@ ActiveRecord::Schema.define(version: 20170925051039) do
     t.float "rating"
     t.text "description"
     t.string "profile_image"
+    t.integer "open"
+    t.integer "close"
     t.string "cuisine"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
