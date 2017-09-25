@@ -7,7 +7,8 @@ const sessionLinks = () => (
   <div className='header'>
     <span className="nav-bar">
       <Link to="/">
-        <img className="main-logo" src='http://res.cloudinary.com/djyzqmji3/image/upload/v1506192199/TableUp_logo_combined_kyzw2y.svg' />
+        <img className="main-logo"
+          src='http://res.cloudinary.com/djyzqmji3/image/upload/v1506192199/TableUp_logo_combined_kyzw2y.svg' />
       </Link>
       <span className='modal-buttons'>
         <SignupModalContainer />

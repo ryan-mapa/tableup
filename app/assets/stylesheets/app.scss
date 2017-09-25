@@ -1,4 +1,4 @@
-.app-container {
+.main-container {
   max-width: 1140px;
   padding: 0px 80px;
   margin: auto;
@@ -56,6 +56,11 @@
 
 .search-button input:hover {
   background-color: #b8222d;
+}
+
+.restaurant-index {
+  border: 1px solid grey;
+  margin-top: 70px;
 }
 
 .restaurant-index-item {

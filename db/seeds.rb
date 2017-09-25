@@ -60,7 +60,10 @@ Restaurant.create([
     city: "San Francisco",
     price: 32,
     rating: 4.3,
-    description: "Chris Kim's fantastical dining zone that he made from 2 pieces of twine and nickel!",
+    description: "Chris Kim's fantastical dining zone that he made from
+                  2 pieces of twine and nickel! Give him some credit. He 
+                  worked really hard to get the funds to start the CK
+                  restaurant group.",
     profile_image: "https://resizer.otstatic.com/v2/profiles/legacy/148555.jpg",
     cuisine: "korean"
   },
