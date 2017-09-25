@@ -61,11 +61,11 @@ Restaurant.create([
     price: 32,
     rating: 4.3,
     description: "Chris Kim's fantastical dining zone that he made from
-                  2 pieces of twine and nickel! Give him some credit. He 
+                  2 pieces of twine and nickel! Give him some credit. He
                   worked really hard to get the funds to start the CK
                   restaurant group.",
     profile_image: "https://resizer.otstatic.com/v2/profiles/legacy/148555.jpg",
-    cuisine: "korean"
+    cuisine: "Korean"
   },
   {
     name: "Sasaki",
@@ -83,13 +83,13 @@ Restaurant.create([
     rating: 2.3,
     description: "Not a good place for fine dining. Good for children, though.",
     profile_image: "https://resizer.otstatic.com/v2/profiles/legacy/53449.jpg",
-    cuisine: "american"
+    cuisine: "American"
   },
   {
     name: "Iza Ramen",
     city: "San Francisco",
     price: 16,
-    rating: 4.6,
+    rating: 4.4,
     description: "Tsukemen is what this place is all about!",
     profile_image: "https://resizer.otstatic.com/v2/profiles/legacy/117721.jpg",
     cuisine: "Japanese"

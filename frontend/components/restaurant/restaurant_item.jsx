@@ -9,7 +9,8 @@ const RestaurantItem = ({restaurant}) => {
   return (
     <div className='restaurant-index-item'>
       <span>
-        <img className='profile-image' src={restaurant.profile_image}></img>
+        <img className='restaurant-profile-image'
+              src={restaurant.profile_image}></img>
       </span>
       <span className='restaurant-info'>
         <h2>{restaurant.name}</h2>

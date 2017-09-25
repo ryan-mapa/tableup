@@ -52,9 +52,10 @@
   color: white;
   font-weight: 400;
   font-family: helvetica;
+  cursor: pointer;
 }
 
-.search-button input:hover {
+.search-button :hover {
   background-color: #b8222d;
 }
 
@@ -69,8 +70,10 @@
   margin-left: 30px;
 }
 
-.profile-image {
+.restaurant-profile-image {
   border-radius: 8px;
+  height: 220px;
+  width: 220px;
 }
 
 .restaurant-info {
