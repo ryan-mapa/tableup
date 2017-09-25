@@ -57,3 +57,19 @@
 .search-button input:hover {
   background-color: #b8222d;
 }
+
+.restaurant-index-item {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.restaurant-info {
+  font-family: helvetica;
+  margin-left: 10px;
+}
+
+.restaurant-info h2 {
+  font-size: 22px;
+  font-weight: bold;
+
+}
