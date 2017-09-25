@@ -6,7 +6,9 @@ import SigninModalContainer from '../signin_modal/signin_modal_container';
 const sessionLinks = () => (
   <div className='header'>
     <span className="nav-bar">
-      <Link to="/" className="main-logo"></Link>
+      <Link to="/">
+        <img className="main-logo" src='http://res.cloudinary.com/djyzqmji3/image/upload/v1506116337/tableup_logo_mw2yqv.png' />
+      </Link>
       <span className='modal-buttons'>
         <SignupModalContainer />
         <SigninModalContainer />
