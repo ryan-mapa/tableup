@@ -61,7 +61,7 @@ Restaurant.create([
     price: 32,
     rating: 4.3,
     description: "Chris Kim's fantastical dining zone that he made from 2 pieces of twine and nickel!",
-    profile_image: "",
+    profile_image: "https://resizer.otstatic.com/v2/profiles/legacy/148555.jpg",
     cuisine: "korean"
   },
   {
@@ -70,7 +70,7 @@ Restaurant.create([
     price: 232,
     rating: 5.0,
     description: "Without doubt, the best sushi in San Francisco. Truly authentic and traditional!",
-    profile_image: "",
+    profile_image: "https://resizer.otstatic.com/v2/profiles/legacy/214570.jpg",
     cuisine: "Japanese"
   },
   {
@@ -79,7 +79,7 @@ Restaurant.create([
     price: 6,
     rating: 2.3,
     description: "Not a good place for fine dining. Good for children, though.",
-    profile_image: "",
+    profile_image: "https://resizer.otstatic.com/v2/profiles/legacy/53449.jpg",
     cuisine: "american"
   },
   {
@@ -88,7 +88,7 @@ Restaurant.create([
     price: 16,
     rating: 4.6,
     description: "Tsukemen is what this place is all about!",
-    profile_image: "",
+    profile_image: "https://resizer.otstatic.com/v2/profiles/legacy/117721.jpg",
     cuisine: "Japanese"
   },
   {
@@ -97,7 +97,7 @@ Restaurant.create([
     price: 32,
     rating: 4.3,
     description: "The all-famous soup dumpling restaurant",
-    profile_image: "",
+    profile_image: "https://resizer.otstatic.com/v2/profiles/legacy/122550.jpg",
     cuisine: "Taiwanese"
   },
   {
@@ -106,7 +106,7 @@ Restaurant.create([
     price: 12,
     rating: 4.8,
     description: "David Bank's favorite restaurant. Excellent ramen! LIT.",
-    profile_image: "",
+    profile_image: "https://resizer.otstatic.com/v2/profiles/legacy/86974.jpg",
     cuisine: "Japanese"
   },
   {
@@ -115,7 +115,7 @@ Restaurant.create([
     price: 75,
     rating: 4.8,
     description: "Dat steak tho!",
-    profile_image: "",
+    profile_image: "https://resizer.otstatic.com/v2/profiles/legacy/3099.jpg",
     cuisine: "American"
   },
 ])
