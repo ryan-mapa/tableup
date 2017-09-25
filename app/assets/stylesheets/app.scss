@@ -77,6 +77,7 @@
   font-family: helvetica;
   margin-left: 10px;
   max-width: 600px;
+  line-height: 1.2;
 }
 
 .restaurant-info h2 {
@@ -87,4 +88,11 @@
 .restaurant-info h3 {
   font-weight: bold;
   margin-bottom: 4px;
+}
+.restaurant-info hr {
+  width: 600px;
+}
+
+.star-rating {
+  color: gold;
 }
