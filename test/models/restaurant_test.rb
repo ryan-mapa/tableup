@@ -10,6 +10,8 @@
 #  rating        :float
 #  description   :text
 #  profile_image :string
+#  open          :integer
+#  close         :integer
 #  cuisine       :string
 #  created_at    :datetime         not null
 #  updated_at    :datetime         not null

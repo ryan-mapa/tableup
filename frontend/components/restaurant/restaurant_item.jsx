@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const RestaurantItem = ({restaurant}) => {
   let length = Math.round(restaurant.rating);
@@ -9,8 +10,10 @@ const RestaurantItem = ({restaurant}) => {
   return (
     <div className='restaurant-index-item'>
       <span>
-        <img className='restaurant-profile-image'
-              src={restaurant.profile_image}></img>
+        <Link to={`/restaurants/${restaurant.id}`} >
+          <img className='restaurant-profile-image'
+            src={restaurant.profile_image}></img>
+        </Link>
       </span>
       <span className='restaurant-info'>
         <h2>{restaurant.name}</h2>

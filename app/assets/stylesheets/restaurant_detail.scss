@@ -1,0 +1,42 @@
+.restaurant-detail-body {
+  max-width: 1140px;
+  margin: auto;
+}
+
+.banner-detail {
+  background-image: url('http://res.cloudinary.com/djyzqmji3/image/upload/c_crop,h_220,w_2000/v1506382198/banner_2000x300_mg6p70.png');
+  display: flex;
+  height: 220px;
+  margin-bottom: 80px;
+  width: inherit;
+}
+
+.banner-detail h2 {
+  margin-left: 240px;
+  font-size: 35px;
+  font-family: helvetica;
+  margin-top: -200px;
+  color: white;
+  font-weight: 200;
+}
+
+.restaurant-highlights {
+  margin-left: 245px;
+  font-size: 15px;
+  font-family: helvetica;
+  margin-top: -14px;
+  color: white;
+  line-height: 1.2;
+  font-weight: 200;
+}
+
+.restaurant-profile-position {
+  justify-content: flex-start;
+  position: relative;
+  top: 50px;
+  margin: 30px;
+}
+
+.body-inner {
+  margin: 30px;
+}

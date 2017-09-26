@@ -8,7 +8,7 @@ class Api::RestaurantsController < ApplicationController
   end
 
   def show
-    @restaurant = Restaurant.find_by(params[:id])
+    @restaurant = Restaurant.find_by(id: params[:id])
   end
 
   def update

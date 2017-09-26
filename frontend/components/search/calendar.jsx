@@ -28,8 +28,11 @@ class Calendar extends React.Component {
         showTimeSelect
         timeIntervals={60}
         minDate={moment()}
+
         minTime={moment().hours(11).minutes(0)}
         maxTime={moment().hours(22).minutes(0)}
+
+
         dateFormat="LLL"
     />;
   }

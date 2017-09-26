@@ -20,7 +20,10 @@ const sessionLinks = () => (
 
 const personalGreeting = (currentUser, logout) => (
 	<span className="nav-bar">
-    <Link to="/" className="main-logo"></Link>
+    <Link to="/">
+      <img className="main-logo"
+        src='http://res.cloudinary.com/djyzqmji3/image/upload/v1506192199/TableUp_logo_combined_kyzw2y.svg' />
+    </Link>
     <span className="greeting-message">
       <h2>Hi, {currentUser.name}</h2>
       <button className="header-button" onClick={logout}>Sign Out</button>
