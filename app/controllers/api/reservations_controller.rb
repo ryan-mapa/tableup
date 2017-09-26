@@ -1,20 +1,18 @@
-class ReservationsController < ApplicationController
+class Api::ReservationsController < ApplicationController
   def create
     # needs rest id, user id, reservation date and time
     @reservation = Reservation.new(reservation_params)
     @resrvation.restaurant_id = params[:restaurant_id]
     @reservation.user_id = current_user.id
     if @reservation.save
-      
+
     else
       render json: @reservation.errors.full_messages, status: 422
     end
   end
 
-  def show
-  end
-
   def index
+    @resrvations = Resrvation.find_by
   end
 
   def destroy
