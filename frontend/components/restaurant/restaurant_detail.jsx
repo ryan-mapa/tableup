@@ -21,9 +21,24 @@ class RestaurantDetail extends React.Component {
     for (var i = 0; i < length; i++) {
       stars += "★";
     }
+
+    let open;
+    if (restaurant.open === 24) {
+      open = `12:00 AM`;
+    } else if (restaurant.open > 12) {
+      open = `${(restaurant.open - 12)}:00 PM`;
+    } else { open = `${(restaurant.open)}:00 AM`; }
+
+    let close;
+    if (restaurant.close === 24) {
+      close = `12:00 AM`;
+    } else if (restaurant.close > 12) {
+      close = `${(restaurant.close - 12)}:00 PM`;
+    } else { close = `${(restaurant.close)}:00 AM`; }
+
+
+
     return (
-
-
       <div className='restaurant-detail-body'>
         <div className='banner-detail' >
           <span className='restaurant-profile-position'>
@@ -34,7 +49,8 @@ class RestaurantDetail extends React.Component {
               <br /><span>City: </span>{restaurant.city}
               <br /><span>Cuisine: </span>{restaurant.cuisine}
               <br /><span>Rating: </span><span className='star-rating'>{stars}</span>
-              <br /><span>Avg. Price: $</span>{restaurant.price}<br />
+              <br /><span>Avg. Price: $</span>{restaurant.price}
+              <br /><h3>Hours of Operation: </h3>{open} - {close}
             </div>
 
             <div className='reservation-form'>
@@ -45,7 +61,6 @@ class RestaurantDetail extends React.Component {
 
         <div className='body-inner'>
           <span className='restaurant-info'>
-            <br /><h3>Hours of Operation: </h3>{restaurant.open} to {restaurant.close}
             <br /><h3>Description: </h3>{restaurant.description}
 
           </span>

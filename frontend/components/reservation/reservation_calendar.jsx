@@ -21,6 +21,9 @@ class ReservationCalendar extends React.Component {
   }
 
   render() {
+    const open = this.props.restaurant.open;
+    const close = this.props.restaurant.close;
+
     return <DatePicker className='calendar-style'
         selected={this.state.startDate}
         onChange={this.handleChange}
@@ -29,8 +32,8 @@ class ReservationCalendar extends React.Component {
         timeIntervals={60}
         minDate={moment()}
 
-        minTime={moment().hours(11).minutes(0)}
-        maxTime={moment().hours(22).minutes(0)}
+        minTime={moment().hours(open).minutes(0)}
+        maxTime={moment().hours(close).minutes(0)}
 
         dateFormat="LLL"
     />;

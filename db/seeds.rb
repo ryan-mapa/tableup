@@ -88,7 +88,7 @@ Restaurant.create([
     description: "Not a good place for fine dining. Good for children, though.",
     profile_image: "https://resizer.otstatic.com/v2/profiles/legacy/53449.jpg",
     open: 5,
-    close: 24,
+    close: 23,
     cuisine: "American"
   },
   {

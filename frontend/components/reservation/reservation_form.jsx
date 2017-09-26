@@ -15,7 +15,8 @@ class ReservationForm extends React.Component {
     console.log(this.props);
     return (
       <div>
-        I ADDED SOME STUFF
+        <p>Reserve and TableUp!</p>
+        <ReservationCalendar restaurant={this.props.restaurant} />
       </div>
     );
   }

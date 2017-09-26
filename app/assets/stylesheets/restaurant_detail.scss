@@ -15,16 +15,17 @@
   margin-left: 240px;
   font-size: 35px;
   font-family: helvetica;
-  margin-top: -200px;
+  margin-top: -210px;
   color: white;
   font-weight: 200;
+  width: 600px
 }
 
 .restaurant-highlights {
   margin-left: 245px;
   font-size: 15px;
   font-family: helvetica;
-  margin-top: -14px;
+  margin-top: -10px;
   color: white;
   line-height: 1.2;
   font-weight: 200;
@@ -39,7 +40,7 @@
 
 .reservation-form {
   position: relative;
-  bottom: 50px;
+  bottom: 85px;
   left: 450px;
   background-color: white;
   height: 130px;
@@ -51,7 +52,13 @@
   justify-content: flex-start;
 }
 
-
+.reservation-form p {
+  font-family: helvetica;
+  font-weight: 400;
+  font-size: 24px;
+  margin-left: 20px;
+  margin-bottom: 2px;
+}
 
 .body-inner {
   margin: 30px;
