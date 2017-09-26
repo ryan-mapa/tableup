@@ -33,18 +33,19 @@ class SigninModal extends React.Component {
   constructor(props) {
     super(props);
     this.state =
-        {name: "", username: "", password: "", email: "", modalIsOpen: false};
+        {name: "", username: "", password: "", email: ""};
     this.openModal = this.openModal.bind(this);
     this.closeModal = this.closeModal.bind(this);
   }
 
   openModal() {
-    this.setState({modalIsOpen: true});
+    this.props.toggleLoginModal();
+    // this.setState({modalIsOpen: true});
   }
 
   closeModal() {
-    this.props.clearErrors();
-    this.setState({modalIsOpen: false});
+    this.props.toggleLoginModal();
+    // this.setState({modalIsOpen: false});
   }
 
   handleSubmit(e) {
@@ -80,12 +81,13 @@ class SigninModal extends React.Component {
   }
 
   render() {
+    console.log(this.props.loginModalOpen);
     return (
       <span>
 
         <button onClick={this.openModal}>Sign In</button>
         <Modal
-          isOpen={this.state.modalIsOpen}
+          isOpen={this.props.loginModalOpen}
           onRequestClose={this.closeModal}
           style={customStyles}
           contentLabel="signin"
