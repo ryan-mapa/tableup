@@ -5,7 +5,6 @@ class RestaurantDetail extends React.Component {
   constructor(props) {
     super(props);
     this.state = this.props.restaurant;
-
   }
 
   componentDidMount() {
@@ -36,8 +35,6 @@ class RestaurantDetail extends React.Component {
       close = `${(restaurant.close - 12)}:00 PM`;
     } else { close = `${(restaurant.close)}:00 AM`; }
 
-
-
     return (
       <div className='restaurant-detail-body'>
         <div className='banner-detail' >
@@ -54,7 +51,7 @@ class RestaurantDetail extends React.Component {
             </div>
 
             <div className='reservation-form'>
-              <ReservationForm restaurant={restaurant} currentUser={currentUser}/>
+              <ReservationForm restaurant={restaurant} currentUser={this.props.currentUser}/>
             </div>
           </span>
         </div>
