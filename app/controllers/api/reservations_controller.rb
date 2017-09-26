@@ -2,7 +2,7 @@ class Api::ReservationsController < ApplicationController
   def create
     # needs rest id, user id, reservation date and time
     @reservation = Reservation.new(reservation_params)
-    @resrvation.restaurant_id = params[:restaurant_id]
+    @reservation.restaurant_id = params[:restaurant_id]
     @reservation.user_id = current_user.id
     if @reservation.save
 
@@ -12,7 +12,7 @@ class Api::ReservationsController < ApplicationController
   end
 
   def index
-    @resrvations = Resrvation.find_by
+    @reservations = Reservation.find_by
   end
 
   def destroy

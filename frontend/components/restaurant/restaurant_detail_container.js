@@ -7,7 +7,8 @@ import { withRouter } from 'react-router-dom';
 
 
 const mapStateToProps = (state, routeprops) => ({
-  restaurant: state.entities.restaurants[routeprops.match.params.restaurantId]
+  restaurant: state.entities.restaurants[routeprops.match.params.restaurantId],
+  currentUser: state.session.currentUser
 });
 
 const mapDispatchToProps = (dispatch) => ({

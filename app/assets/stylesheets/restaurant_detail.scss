@@ -6,7 +6,7 @@
 .banner-detail {
   background-image: url('http://res.cloudinary.com/djyzqmji3/image/upload/c_crop,h_220,w_2000/v1506382198/banner_2000x300_mg6p70.png');
   display: flex;
-  height: 220px;
+  height: 250px;
   margin-bottom: 80px;
   width: inherit;
 }
@@ -36,6 +36,22 @@
   top: 50px;
   margin: 30px;
 }
+
+.reservation-form {
+  position: relative;
+  bottom: 50px;
+  left: 450px;
+  background-color: white;
+  height: 130px;
+  width: 600px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+}
+
+
 
 .body-inner {
   margin: 30px;
