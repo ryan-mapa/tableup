@@ -40,12 +40,12 @@ class SigninModal extends React.Component {
 
   openModal() {
     this.props.toggleLoginModal();
-    // this.setState({modalIsOpen: true});
+
   }
 
   closeModal() {
     this.props.toggleLoginModal();
-    // this.setState({modalIsOpen: false});
+
   }
 
   handleSubmit(e) {

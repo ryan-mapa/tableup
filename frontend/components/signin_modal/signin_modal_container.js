@@ -1,7 +1,7 @@
 import {connect} from 'react-redux';
 import {logout, login, clearErrors} from '../../actions/session_actions';
 import SigninModal from './signin_modal';
-import toggleLoginModal from '../../actions/ui_actions';
+import {toggleLoginModal} from '../../actions/ui_actions';
 
 const mapStateToProps = (state) => ({
   currentUser: state.session.currentUser,
