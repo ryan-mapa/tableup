@@ -1,6 +1,6 @@
-export const getUser = () => (
+export const getUser = (id) => (
   $.ajax ({
     method: 'GET',
-    url: 'api/user'
+    url: `api/users/${id}`
   })
 );

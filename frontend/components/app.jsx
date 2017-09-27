@@ -8,6 +8,7 @@ import RestaurantSearchContainer from './search/restaurant_search_form_container
 import Favicon from 'react-favicon';
 import RestaurantDetailContainer from './restaurant/restaurant_detail_container';
 import MainPage from './main_page';
+import UserProfileContainer from './user/user_profile_container';
 
 const App = () => (
   <div className='app-container'>
@@ -17,6 +18,7 @@ const App = () => (
     <GreetingContainer />
     <Switch>
       <Route exact path='/' component={MainPage}></Route>
+      <Route path='/user/:userId' component={UserProfileContainer}></Route>
       <Route path='/restaurants/:restaurantId' component={RestaurantDetailContainer}></Route>
     </Switch>
 
