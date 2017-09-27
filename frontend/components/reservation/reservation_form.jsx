@@ -17,7 +17,12 @@ class ReservationForm extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    this.props.createReservation(this.state);
+    if (this.props.currentUser === null) {
+      this.props.toggleLoginModal();
+    } else {
+      this.props.createReservation(this.state);
+  
+    }
   }
 
   update(e, field) {
