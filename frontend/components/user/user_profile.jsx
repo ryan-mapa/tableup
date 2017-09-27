@@ -1,4 +1,5 @@
 import React from 'react';
+import UserReservationIndex from '../reservation/user_reservations_index';
 
 class UserProfile extends React.Component {
   constructor(props) {
@@ -18,6 +19,8 @@ class UserProfile extends React.Component {
       <div>
         {user.name}
         Yo user profile
+
+        <UserReservationIndex user={user} />
       </div>
     );
   }
