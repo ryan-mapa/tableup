@@ -12,6 +12,15 @@ class restaurantIndex extends React.Component {
   }
 
   render() {
+    console.log(this.props.restaurants);
+
+    let emptyMessage;
+    if (this.props.restaurants.length === 0) {
+      emptyMessage = (
+        <p className='empty-index-message'>
+        No restaurants matched your search
+      </p>);
+    } else { emptyMessage = <div />; }
 
     return (
       <div className='restaurant-index'>
@@ -23,6 +32,7 @@ class restaurantIndex extends React.Component {
                 restaurant={restaurant}
               />
           ))}
+          {emptyMessage}
         </ul>
         <br />
       </div>

@@ -4,13 +4,15 @@ import ReservationCalendar from './reservation_calendar';
 class ReservationForm extends React.Component {
   constructor(props) {
     super(props);
+
+    const now = new Date();
     this.state = {
-      date: "",
-      time_slot: "",
+      date: now.toDateString(),
+      time_slot: now.getHours(),
       restaurant_id: this.props.restaurant.id,
       user_id: this.props.currentUser ?
                 this.props.currentUser.id : undefined,
-      party_size: ""
+      party_size: undefined
     };
     this.parseDate = this.parseDate.bind(this);
   }
@@ -19,9 +21,11 @@ class ReservationForm extends React.Component {
     e.preventDefault();
     if (this.props.currentUser === null) {
       this.props.toggleLoginModal();
+    } else if (this.state.party_size === undefined) {
+      window.alert("Please select a valid date and party size.");
     } else {
       this.props.createReservation(this.state);
-  
+
     }
   }
 
