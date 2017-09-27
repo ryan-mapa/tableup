@@ -2,10 +2,8 @@ class Api::ReservationsController < ApplicationController
   def create
     # needs rest id, user id, reservation date and time
     @reservation = Reservation.new(reservation_params)
-    @reservation.restaurant_id = params[:restaurant_id]
-    @reservation.user_id = current_user.id
     if @reservation.save
-
+      render json: @reservation
     else
       render json: @reservation.errors.full_messages, status: 422
     end
@@ -19,6 +17,7 @@ class Api::ReservationsController < ApplicationController
   end
 
   def reservation_params
-    params.require(:reservation).permit(:date, :time_slot)
+    params.require(:reservation).permit(
+          :date, :time_slot, :restaurant_id, :party_size, :user_id)
   end
 end

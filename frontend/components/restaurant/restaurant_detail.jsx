@@ -1,5 +1,5 @@
 import React from 'react';
-import ReservationForm from '../reservation/reservation_form';
+import ReservationsFormContainer from '../reservation/reservations_container';
 
 class RestaurantDetail extends React.Component {
   constructor(props) {
@@ -51,7 +51,7 @@ class RestaurantDetail extends React.Component {
             </div>
 
             <div className='reservation-form'>
-              <ReservationForm restaurant={restaurant} currentUser={this.props.currentUser}/>
+              <ReservationsFormContainer restaurant={restaurant} currentUser={this.props.currentUser}/>
             </div>
           </span>
         </div>

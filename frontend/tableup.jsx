@@ -5,6 +5,8 @@ import configureStore from './store/store';
 import Root from './components/root';
 import {fetchRestaurants} from './actions/restaurant_actions';
 
+import {createReservation} from './actions/reservation_actions';
+
 document.addEventListener('DOMContentLoaded', () => {
   const root = document.getElementById('root');
 
@@ -23,6 +25,8 @@ document.addEventListener('DOMContentLoaded', () => {
   window.dispatch = store.dispatch;
   window.fetchRestaurants = fetchRestaurants;
   // window.store = configureStore(); //just for testing!
+
+  window.createReservation = createReservation;
 
   ReactDOM.render(<Root store={store} />, root);
 });

@@ -1,4 +1,4 @@
-import RECEIVE_RESERVATION from '../actions/reservation_actions';
+import {RECEIVE_RESERVATION} from '../actions/reservation_actions';
 
 const ReservationReducer = (state = {}, action) => {
   Object.freeze(state);

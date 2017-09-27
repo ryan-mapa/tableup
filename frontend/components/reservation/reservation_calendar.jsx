@@ -18,6 +18,7 @@ class ReservationCalendar extends React.Component {
     this.setState({
       startDate: date
     });
+    this.props.parseDate(date._d);
   }
 
   render() {
