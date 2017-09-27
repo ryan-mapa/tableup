@@ -46,6 +46,8 @@ class ReservationForm extends React.Component {
             <input
               className='reservation-search-input'
               placeholder='Party Size'
+              type='number'
+              min='1'
               value={this.state.party_size}
               onChange={e => this.update(e, 'party_size')}
               ></input>
