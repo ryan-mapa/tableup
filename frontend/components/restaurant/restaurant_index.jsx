@@ -12,7 +12,7 @@ class restaurantIndex extends React.Component {
   }
 
   render() {
-    console.log(this.props.restaurants);
+
 
     let emptyMessage;
     if (this.props.restaurants.length === 0) {

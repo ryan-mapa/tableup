@@ -12,4 +12,7 @@
 #
 
 class Reservation < ApplicationRecord
+  validates :user_id, :restaurant_id, :date, :time_slot, null: false
+
+  belongs_to :user
 end

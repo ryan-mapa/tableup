@@ -81,7 +81,7 @@ class SigninModal extends React.Component {
   }
 
   render() {
-    console.log(this.props.loginModalOpen);
+
     return (
       <span>
 
