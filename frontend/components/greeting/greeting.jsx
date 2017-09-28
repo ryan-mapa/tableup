@@ -8,7 +8,7 @@ const sessionLinks = () => (
     <span className="nav-bar">
       <Link to="/">
         <img className="main-logo"
-          src='http://res.cloudinary.com/djyzqmji3/image/upload/v1506192199/TableUp_logo_combined_kyzw2y.svg' />
+          src='https://res.cloudinary.com/djyzqmji3/image/upload/v1506192199/TableUp_logo_combined_kyzw2y.svg' />
       </Link>
       <span className='modal-buttons'>
         <SignupModalContainer />
@@ -22,7 +22,7 @@ const personalGreeting = (currentUser, logout) => (
 	<span className="nav-bar">
     <Link to="/">
       <img className="main-logo"
-        src='http://res.cloudinary.com/djyzqmji3/image/upload/v1506192199/TableUp_logo_combined_kyzw2y.svg' />
+        src='https://res.cloudinary.com/djyzqmji3/image/upload/v1506192199/TableUp_logo_combined_kyzw2y.svg' />
     </Link>
     <span className="greeting-message">
       <h2>Hi, {currentUser.name}</h2>

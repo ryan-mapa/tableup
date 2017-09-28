@@ -13,7 +13,7 @@ import UserProfileContainer from './user/user_profile_container';
 const App = () => (
   <div className='app-container'>
     <div>
-      <Favicon url="http://res.cloudinary.com/djyzqmji3/image/upload/v1506322195/TableUp_favicon_1x_a5qbbc.png" />
+      <Favicon url="https://res.cloudinary.com/djyzqmji3/image/upload/v1506322195/TableUp_favicon_1x_a5qbbc.png" />
     </div>
     <GreetingContainer />
     <Switch>
