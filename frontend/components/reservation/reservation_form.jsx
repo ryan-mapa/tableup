@@ -24,9 +24,13 @@ class ReservationForm extends React.Component {
     } else if (this.state.party_size === undefined) {
       window.alert("Please select a valid date and party size.");
     } else {
-      this.props.createReservation(this.state);
+      this.props.createReservation(this.state).then(() => this.profileRedirect());
 
     }
+  }
+
+  profileRedirect() {
+    window.location.href = window.location.origin + `/#/user/${this.props.currentUser.id}`;
   }
 
   update(e, field) {
