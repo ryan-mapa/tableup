@@ -17,7 +17,7 @@ class UserProfile extends React.Component {
     let user = this.props.user;
 
     return (
-      <div>
+      <div className='centerize'>
         <div className='user-profile'>
           <div className='banner-detail' >
             <span className='restaurant-profile-position'>

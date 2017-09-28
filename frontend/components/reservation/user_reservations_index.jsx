@@ -7,10 +7,10 @@ class ReservationIndex extends React.Component {
     let reservations = this.props.user.reservations;
 
     return (
-      <div>
-        <h2>
+      <div className='main-container'>
+        <h2 className='upcoming-reservations'>
             Upcoming Reservations:
-        </h2>
+        </h2><hr />
         <ul>
           {
             reservations.map((reservation) => (

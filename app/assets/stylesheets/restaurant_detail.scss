@@ -70,5 +70,20 @@
 }
 
 .body-inner {
-  margin: 30px;
+
+}
+
+.restaurant-description {
+  border: 1px solid grey;
+  padding: 30px;
+  margin-bottom: 50px;
+  font-family: helvetica;
+  width: 920px;
+  border-radius: 8px;
+  background-color: #f7f7f7;
+}
+
+.restaurant-description  h2 {
+  font-size: 25px;
+  margin-bottom: 10px;
 }

@@ -17,9 +17,9 @@ class restaurantIndex extends React.Component {
     let emptyMessage;
     if (this.props.restaurants.length === 0) {
       emptyMessage = (
-        <p className='empty-index-message'>
-        No restaurants matched your search
-      </p>);
+        <div className='empty-index-message'>
+          <h2>No restaurants matched your search</h2>
+        </div>);
     } else { emptyMessage = <div />; }
 
     return (

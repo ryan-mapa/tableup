@@ -56,9 +56,9 @@ class RestaurantDetail extends React.Component {
           </span>
         </div>
 
-        <div className='body-inner'>
+        <div className='restaurant-description'>
           <span className='restaurant-info'>
-            <br /><h3>Description: </h3>{restaurant.description}
+            <br /><h2>Description: </h2>{restaurant.description}
 
           </span>
         </div>

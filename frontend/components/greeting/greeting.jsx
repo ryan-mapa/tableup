@@ -26,6 +26,7 @@ const personalGreeting = (currentUser, logout) => (
     </Link>
     <span className="greeting-message">
       <h2>Hi, {currentUser.name}</h2>
+      <Link to={`/user/${currentUser.id}`} className='profile-link' >Profile Page</Link>
       <button className="header-button" onClick={logout}>Sign Out</button>
     </span>
 	</span>

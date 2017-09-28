@@ -1,8 +1,14 @@
 .main-container {
   max-width: 1140px;
-  padding: 0px 80px;
   margin: auto;
+  padding: 0px 80px;
   background-color: #f7f7f7;
+  padding-bottom: 80px;
+}
+
+.centerize {
+  max-width: 1140px;
+  margin: auto;
 }
 
 .main-img {
@@ -114,4 +120,15 @@
 
 .star-rating {
   color: gold;
+}
+
+.empty-index-message {
+  display: flex;
+  justify-content: center;
+}
+
+.empty-index-message h2 {
+  font-size: 25px;
+  font-family: helvetica;
+  color: grey;
 }
