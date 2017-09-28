@@ -63,7 +63,8 @@ Restaurant.create([
     description: "Chris Kim's fantastical dining zone that he made from
                   2 pieces of twine and nickel! Give him some credit. He
                   worked really hard to get the funds to start the CK
-                  restaurant group.",
+                  restaurant group. Good for any occasion! Bring your kids.
+                  Bring your wife. Bring everyone you know.",
     profile_image: "https://resizer.otstatic.com/v2/profiles/legacy/148555.jpg",
     open: 11,
     close: 22,
@@ -74,7 +75,7 @@ Restaurant.create([
     city: "San Francisco",
     price: 232,
     rating: 5.0,
-    description: "Without doubt, the best sushi in San Francisco. Truly authentic and traditional!",
+    description: "Without doubt, the best sushi in San Francisco. An authentic invocation of a high-end Japanese sushi bar. Many excellent cuts of fish. Sasaki-san is wonderful to talk with, and will explain any questions. You won't leave hungry!",
     profile_image: "https://resizer.otstatic.com/v2/profiles/legacy/214570.jpg",
     open: 17,
     close: 23,

@@ -6,6 +6,13 @@ class ReservationIndex extends React.Component {
   render() {
     let reservations = this.props.user.reservations;
 
+    let noReservations;
+    if (reservations.length === 0) {
+      noReservations = 'You have no Reservations';
+    } else {
+      noReservations = '';
+    }
+
     return (
       <div className='main-container'>
         <h2 className='upcoming-reservations'>
@@ -23,6 +30,9 @@ class ReservationIndex extends React.Component {
             ))
           }
         </ul>
+
+        <div className='empty-index-message' ><h2>{noReservations}</h2></div>
+
       </div>
     );
   }
