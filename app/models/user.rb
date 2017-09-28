@@ -22,7 +22,7 @@ class User < ApplicationRecord
   attr_reader :password
 
   has_many :reservations
-
+  has_many :reviews
 
   def password=(password)
     @password = password
