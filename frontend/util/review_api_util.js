@@ -1,8 +1,9 @@
-export const postReview = () => {
-  return ({
+export const postReview = (review) => {
+  return (
     $.ajax ({
       method: 'POST',
-      url: 'api/reviews'
+      url: 'api/reviews',
+      data: {review}
     })
-  });
+  );
 };
