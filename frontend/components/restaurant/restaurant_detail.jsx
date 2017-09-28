@@ -1,5 +1,6 @@
 import React from 'react';
 import ReservationsFormContainer from '../reservation/reservations_container';
+import ReviewFormContainer from '../review/review_form_container';
 
 class RestaurantDetail extends React.Component {
   constructor(props) {
@@ -61,6 +62,11 @@ class RestaurantDetail extends React.Component {
             <br /><h2>Description: </h2>{restaurant.description}
 
           </span>
+        </div>
+
+        <div>
+          <ReviewFormContainer />
+
         </div>
       </div>
     );
