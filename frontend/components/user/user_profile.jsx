@@ -1,5 +1,5 @@
 import React from 'react';
-import UserReservationIndex from '../reservation/user_reservations_index';
+import UserReservationIndexContainer from '../reservation/user_reservations_index_container';
 
 class UserProfile extends React.Component {
   constructor(props) {
@@ -15,12 +15,21 @@ class UserProfile extends React.Component {
     if (!this.props.user) return null;
     console.log(this.props.user);
     let user = this.props.user;
+
     return (
       <div>
-        {user.name}
-        Yo user profile
+        <div className='user-profile'>
+          <div className='banner-detail' >
+            <span className='restaurant-profile-position'>
+              <img className='restaurant-profile-image'
+                src='http://res.cloudinary.com/djyzqmji3/image/upload/v1506547432/profile-placeholder_yh2mpt.gif'></img>
+              <h2>{user.name}</h2>
 
-        <UserReservationIndex user={user} />
+            </span>
+          </div>
+        </div>
+
+        <UserReservationIndexContainer user={user} />
       </div>
     );
   }
