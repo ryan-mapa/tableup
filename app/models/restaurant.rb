@@ -20,6 +20,8 @@
 class Restaurant < ApplicationRecord
   validates :name, null: false, uniqueness: true
 
+  has_many :reviews
+
   def self.search_by_city(query)
     param = '%' + query.downcase + '%'
     Restaurant.where('lower(city) LIKE ?', param).limit(10)
