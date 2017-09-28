@@ -1,11 +1,18 @@
 Rails.application.routes.draw do
 
+  get 'reviews/create'
+
+  get 'reviews/index'
+
+  get 'reviews/destroy'
+
   namespace :api, defaults: {format: :json} do
     resources :users, only: [:create, :show]
     resource :session, only: [:create, :destroy, :show]
     resources :restaurants, only: [:create, :index, :show, :update]
     resources :restaurant_searches, only: [:index]
     resources :reservations, only: [:create, :index, :destroy]
+    resources :reviews, only: [:create, :index]
   end
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
