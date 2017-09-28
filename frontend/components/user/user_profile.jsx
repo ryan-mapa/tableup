@@ -21,8 +21,8 @@ class UserProfile extends React.Component {
         <div className='user-profile'>
           <div className='banner-detail' >
             <span className='restaurant-profile-position'>
-              <img className='restaurant-profile-image'
-                src='http://res.cloudinary.com/djyzqmji3/image/upload/v1506547432/profile-placeholder_yh2mpt.gif'></img>
+              <img className='user-profile-image'
+                src={user.profile_image} ></img>
               <h2>{user.name}</h2>
 
             </span>

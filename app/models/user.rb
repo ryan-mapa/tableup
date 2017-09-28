@@ -10,13 +10,14 @@
 #  email           :string           not null
 #  created_at      :datetime         not null
 #  updated_at      :datetime         not null
+#  profile_image   :string
 #
 
 class User < ApplicationRecord
   validates :username, :password_digest, presence: true
   validates :username, uniqueness: true
   validates :password, length: {minimum: 6}, allow_nil: true
-  after_initialize :ensure_session_token
+  after_initialize :ensure_session_token, :ensure_profile_image
 
   attr_reader :password
 
@@ -40,6 +41,11 @@ class User < ApplicationRecord
 
   def ensure_session_token
     self.session_token ||= SecureRandom.urlsafe_base64
+  end
+
+  def ensure_profile_image
+    self.profile_image ||=
+      "http://www.tinygraphs.com/squares/#{self.username}?theme=frogideas&numcolors=4&size=220&fmt=svg"
   end
 
   def self.find_by_credentials(username, password)

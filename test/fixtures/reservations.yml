@@ -9,6 +9,7 @@
 #  time_slot     :integer          not null
 #  created_at    :datetime         not null
 #  updated_at    :datetime         not null
+#  party_size    :integer          not null
 #
 
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html

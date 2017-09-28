@@ -9,7 +9,7 @@ class ReservationIndex extends React.Component {
     return (
       <div className='main-container'>
         <h2 className='upcoming-reservations'>
-            Upcoming Reservations:
+            Your Reservations:
         </h2><hr />
         <ul>
           {
