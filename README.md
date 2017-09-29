@@ -16,6 +16,26 @@ Implementing search in this way affords the user great ease in only having to in
 
 ![home](./app/assets/images/search.png)
 
+The search logic was done in the Restaurant model. The main search by restaurant name method calls the search_by_city and search_by_cuisine methods to combine all the results.
+
+```
+def self.search_by_city(query)
+  param = '%' + query.downcase + '%'
+  Restaurant.where('lower(city) LIKE ?', param).limit(10)
+end
+
+def self.search_by_cuisine(query)
+  param = '%' + query.downcase + '%'
+  Restaurant.where('lower(cuisine) LIKE ?', param).limit(10)
+end
+
+def self.search_results(query)
+  param = '%' + query.downcase + '%'
+  by_name = Restaurant.where('lower(name) LIKE ?', param).limit(10)
+  by_name + search_by_city(query) + search_by_cuisine(query)
+end
+```
+
 ### Reservations
 Reservations can be made easily with the time and date calendar feature. The calendar is implemented with the react-datepicker module. Users can quickly select both the date and time without having to move between fields. Just choose your party size and reserve!
 
