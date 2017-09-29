@@ -23,6 +23,8 @@ class ReviewIndex extends React.Component {
                 fetchUser={this.props.fetchUser}
                 type={this.props.type}
                 users={this.props.users}
+                restaurants={this.props.restaurants}
+                fetchRestaurant={this.props.fetchRestaurant}
                 />
             ))
           }

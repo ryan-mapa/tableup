@@ -36,6 +36,7 @@ class SigninModal extends React.Component {
         {name: "", username: "", password: "", email: ""};
     this.openModal = this.openModal.bind(this);
     this.closeModal = this.closeModal.bind(this);
+    this.redirectHome = this.redirectHome.bind(this);
   }
 
   openModal() {
@@ -53,7 +54,11 @@ class SigninModal extends React.Component {
     const user = Object.assign({}, this.state);
     this.props.login(user).then(() => {
       if (this.props.errors.length === 0) ( this.closeModal());
-    });
+    }).then(() => this.redirectHome());
+  }
+
+  redirectHome() {
+    window.location.href = window.location.origin;
   }
 
   update(e, field) {

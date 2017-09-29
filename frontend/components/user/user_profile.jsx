@@ -1,5 +1,7 @@
 import React from 'react';
 import UserReservationIndexContainer from '../reservation/user_reservations_index_container';
+import ReviewIndexContainer from '../review/review_index_container';
+
 
 class UserProfile extends React.Component {
   constructor(props) {
@@ -13,7 +15,7 @@ class UserProfile extends React.Component {
 
   render() {
     if (!this.props.user) return null;
-    
+
     let user = this.props.user;
 
     return (
@@ -30,6 +32,7 @@ class UserProfile extends React.Component {
         </div>
 
         <UserReservationIndexContainer user={user} />
+        <ReviewIndexContainer type={'user'}/>
       </div>
     );
   }
