@@ -17,8 +17,14 @@ class ReviewForm extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    this.props.createReview(this.state);
-    if (this.state.user_id === undefined) {this.props.toggleLoginModal();}
+
+    if (this.state.user_id === undefined) {
+      this.props.toggleLoginModal();
+    } else if (this.state.body === "") {
+      window.alert("Don't forget to write your review before submitting!");
+    } else {
+      this.props.createReview(this.state).then(() => this.setState({body: ""}));
+    }
   }
 
 
@@ -35,6 +41,7 @@ class ReviewForm extends React.Component {
             type='text'
             onChange={e => this.update(e)}
             placeholder="Write your review here"
+            value={this.state.body}
             ></textarea><br />
           <input className='review-form-button' type="submit" value="Submit"></input>
         </form>
