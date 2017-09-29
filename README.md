@@ -22,9 +22,9 @@ Reservations can be made easily with the time and date calendar feature. The cal
 ![Calendar](./app/assets/images/reserve_calendar.png)
 
 
-### additional resources
-To see development and planning documentation 
-see wiki: [wiki](https://github.com/ryan-mapa/tableup/wiki)
+### Additional resources
+To see development and planning documentation
+see the [wiki](https://github.com/ryan-mapa/tableup/wiki).
 
 ### Future planned features
 + Front page filtering by date/time user wants to reserve
