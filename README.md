@@ -11,22 +11,22 @@ TableUp is a full-stack web app that helps you search for and make reservations 
 
 
 ### Search
-SEARCH by city name/ restaurant or cuisine
+TableUp has a simple search function that allows you to search by City, Cuisine type, or Restaurant name.
+Implementing search in this way affords the user great ease in only having to interact with a single field.
 
 ![home](./app/assets/images/search.png)
 
 ### Reservations
-make reservations  
-
-![Reserve](./app/assets/images/reserve.png)
+Reservations can be made easily with the time and date calendar feature. The calendar is implemented with the react-datepicker module. Users can quickly select both the date and time without having to move between fields. Just choose your party size and reserve!
 
 ![Calendar](./app/assets/images/reserve_calendar.png)
 
 
-###additional resources
+### additional resources
+To see development and planning documentation 
 see wiki: [wiki](https://github.com/ryan-mapa/tableup/wiki)
 
-###Future planned features
+### Future planned features
 + Front page filtering by date/time user wants to reserve
 + Favorite status that a user can save for a restaurant
 + Protected routes so users can't view other user pages by url
