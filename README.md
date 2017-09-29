@@ -1,27 +1,33 @@
-# README
+![Logo](./app/assets/images/tableup_logo.png)
 
+# TableUp
 ![Tableup Heroku Link](https://tableupfs.herokuapp.com/#/)
 
+TableUp is a full-stack web app that helps you search for and make reservations at the all best restaurants. This app is inspired by OpenTable and is built with a Rails backend running PostgreSQL for the database. The front end is built out in the React.js/Redux framework.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+![home](./app/assets/images/home.png)
 
-Things you may want to cover:
+## Features
 
-* Ruby version
 
-* System dependencies
+### Search
+SEARCH by city name/ restaurant or cuisine
 
-* Configuration
+![home](./app/assets/images/search.png)
 
-* Database creation
+### Reservations
+make reservations  
 
-* Database initialization
+![Reserve](./app/assets/images/reserve.png)
 
-* How to run the test suite
+![Calendar](./app/assets/images/reserve_calendar.png)
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+###additional resources
+see wiki: [wiki](https://github.com/ryan-mapa/tableup/wiki)
 
-* ...
+###Future planned features
++ Front page filtering by date/time user wants to reserve
++ Favorite status that a user can save for a restaurant
++ Protected routes so users can't view other user pages by url
++ Allow users to offer a rating on review that updates average on restaurant's rating
