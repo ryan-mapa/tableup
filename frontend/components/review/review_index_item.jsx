@@ -3,8 +3,6 @@ import React from 'react';
 
 class ReviewIndexItem extends React.Component {
 
-
-//add conditional logic for user profile page
   componentWillMount() {
     if (this.props.type === 'restaurant') {
       this.props.fetchUser(this.props.review.user_id);
@@ -16,7 +14,6 @@ class ReviewIndexItem extends React.Component {
   render() {
     if (Object.keys(this.props.users).length === 0) {return null;}
     if (Object.keys(this.props.restaurants).length === 0) {return null;}
-    //if user show user name else do restaurant name
 
 
     let content;

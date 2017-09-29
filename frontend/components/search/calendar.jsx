@@ -1,10 +1,8 @@
 import React from 'react';
 import DatePicker from 'react-datepicker';
 import moment from 'moment';
-
-// import 'react-datepicker/dist/react-datepicker-cssmodules.css';
 import 'react-datepicker/dist/react-datepicker.css';
-//import css
+
 class Calendar extends React.Component {
   constructor (props) {
     super(props);

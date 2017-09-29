@@ -10,11 +10,6 @@ class ReviewForm extends React.Component {
     };
   }
 
-
-//takes in body from form.
-//user id is from currentUser in state. (map state)
-//restaurant id is from restuarant page... (thread it)
-
   handleSubmit(e) {
     e.preventDefault();
 
@@ -48,8 +43,6 @@ class ReviewForm extends React.Component {
       </div>
     );
   }
-
-
 }
 
 export default ReviewForm;

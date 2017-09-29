@@ -18,15 +18,13 @@ document.addEventListener('DOMContentLoaded', () => {
     store = configureStore();
   }
 
-  window.login = login;
-  window.signup = signup;
-  window.logout = logout;
-  window.getState = store.getState;
-  window.dispatch = store.dispatch;
-  window.fetchRestaurants = fetchRestaurants;
-  // window.store = configureStore(); //just for testing!
-
-  window.createReservation = createReservation;
+  // window.login = login;
+  // window.signup = signup;
+  // window.logout = logout;
+  // window.getState = store.getState;
+  // window.dispatch = store.dispatch;
+  // window.fetchRestaurants = fetchRestaurants;
+  // window.createReservation = createReservation;
 
   ReactDOM.render(<Root store={store} />, root);
 });
