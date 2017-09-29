@@ -65,7 +65,7 @@ class RestaurantDetail extends React.Component {
         </div>
 
         <div>
-          <ReviewFormContainer />
+          <ReviewFormContainer restaurant={restaurant}/>
 
         </div>
       </div>
