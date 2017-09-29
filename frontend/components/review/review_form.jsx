@@ -32,6 +32,7 @@ class ReviewForm extends React.Component {
         <h2>Write a Review!</h2>
         <form onSubmit={e => this.handleSubmit(e)}>
           <input
+            type='text'
             onChange={e => this.update(e)}
             placeholder="Write your review here"
             ></input><br />

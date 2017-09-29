@@ -7,3 +7,12 @@ export const postReview = (review) => {
     })
   );
 };
+
+export const fetchReviews = () => {
+  return (
+    $.ajax ({
+      method: 'GET',
+      url: 'api/reviews',
+    })
+  );
+};
