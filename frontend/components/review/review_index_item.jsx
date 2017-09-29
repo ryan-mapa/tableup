@@ -16,9 +16,8 @@ class ReviewIndexItem extends React.Component {
   render() {
     if (Object.keys(this.props.users).length === 0) {return null;}
     if (Object.keys(this.props.restaurants).length === 0) {return null;}
-    console.log(this.props);
     //if user show user name else do restaurant name
-  
+
 
     let content;
     if (this.props.type === 'restaurant' && this.props.review.restaurant_id === parseInt(this.props.restaurant)) {

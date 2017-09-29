@@ -18,6 +18,7 @@ class ReviewForm extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     this.props.createReview(this.state);
+    if (this.state.user_id === undefined) {this.props.toggleLoginModal();}
   }
 
 
