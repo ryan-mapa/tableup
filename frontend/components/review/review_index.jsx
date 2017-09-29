@@ -9,7 +9,7 @@ class ReviewIndex extends React.Component {
   }
 
   render() {
-    console.log(this.props);
+
     if (this.props.reviews.length === 0) {return null;}
 
     return (
@@ -19,7 +19,11 @@ class ReviewIndex extends React.Component {
             this.props.reviews.map(review => (
               <ReviewIndexItem
                 key={review.id}
-                review={review} />
+                review={review}
+                fetchUser={this.props.fetchUser}
+                type={this.props.type}
+                users={this.props.users}
+                />
             ))
           }
       </div>

@@ -66,7 +66,7 @@ class RestaurantDetail extends React.Component {
         </div>
 
         <div>
-          <ReviewIndexContainer />
+          <ReviewIndexContainer type={'restaurant'}/>
         </div>
 
         <div>
