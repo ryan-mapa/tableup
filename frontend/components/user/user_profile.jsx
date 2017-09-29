@@ -13,7 +13,7 @@ class UserProfile extends React.Component {
 
   render() {
     if (!this.props.user) return null;
-    console.log(this.props.user);
+    
     let user = this.props.user;
 
     return (

@@ -3,7 +3,8 @@ import {createReview, fetchReviews} from '../../actions/review_actions';
 import ReviewIndex from './review_index';
 
 const mapStateToProps = (state) => ({
-  currentUser: state.session.currentUser
+  currentUser: state.session.currentUser,
+  reviews: Object.values(state.entities.reviews) || []
 });
 
 const mapDispatchToProps = (dispatch) => ({
