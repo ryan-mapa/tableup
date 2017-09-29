@@ -37,7 +37,7 @@ end
 ```
 
 ### Reservations
-Reservations can be made easily with the time and date calendar feature. The calendar is implemented with the react-datepicker module. Users can quickly select both the date and time without having to move between fields. Just choose your party size and reserve!
+Reservations can be made easily with the time and date calendar feature. The calendar is implemented with the [react-datepicker](https://github.com/Hacker0x01/react-datepicker) module. Users can quickly select both the date and time without having to move between fields. Just choose your party size and reserve!
 
 ![Calendar](./app/assets/images/reserve_calendar.png)
 
