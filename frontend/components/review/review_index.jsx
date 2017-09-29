@@ -13,7 +13,7 @@ class ReviewIndex extends React.Component {
     if (this.props.reviews.length === 0) {return null;}
 
     return (
-      <div>
+      <div className='review-index'>
         <h2>Reviews:</h2>
           {
             this.props.reviews.map(review => (
@@ -25,6 +25,8 @@ class ReviewIndex extends React.Component {
                 users={this.props.users}
                 restaurants={this.props.restaurants}
                 fetchRestaurant={this.props.fetchRestaurant}
+                restaurant={this.props.restaurant}
+                user={this.props.user}
                 />
             ))
           }

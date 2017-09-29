@@ -16,19 +16,25 @@ class ReviewIndexItem extends React.Component {
   render() {
     if (Object.keys(this.props.users).length === 0) {return null;}
     if (Object.keys(this.props.restaurants).length === 0) {return null;}
-
+    console.log(this.props);
     //if user show user name else do restaurant name
+  
+
     let content;
-    if (this.props.type === 'restaurant') {
-      content = <h2>Review by {this.props.users[this.props.review.user_id].name}:</h2>;
+    if (this.props.type === 'restaurant' && this.props.review.restaurant_id === parseInt(this.props.restaurant)) {
+      content = (<div className='review-index-item'><h3>Review by {
+          this.props.users[this.props.review.user_id].name
+          }:</h3><hr /><br />{this.props.review.body}</div>);
+    } else if (this.props.type === 'user' && this.props.review.user_id === parseInt(this.props.user)) {
+      content = <div className='review-index-item'><h3>Review for {
+          this.props.restaurants[this.props.review.restaurant_id].name
+          }:</h3><hr /><br />{this.props.review.body}</div>;
     } else {
-      content = <h2>Review for {this.props.restaurants[this.props.review.restaurant_id].name}:</h2>;
+      content = <div></div>;
     }
     return (
       <div>
         {content}
-        {this.props.review.body}
-
       </div>
     );
   }
