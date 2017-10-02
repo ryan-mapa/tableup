@@ -1,7 +1,7 @@
 ![Logo](./app/assets/images/tableup_logo.png)
 
 # TableUp
-![Tableup Heroku Link](https://tableupfs.herokuapp.com/#/)
+[Tableup Heroku Link](https://tableupfs.herokuapp.com/#/)
 
 TableUp is a full-stack web app that helps you search for and make reservations at the all best restaurants. This app is inspired by OpenTable and is built with a Rails backend running PostgreSQL for the database. The front end is built out in the React.js/Redux framework.
 
